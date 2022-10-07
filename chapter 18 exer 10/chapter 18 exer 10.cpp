@@ -13,69 +13,61 @@ using namespace std;
 
 int main()
 {
-    double n, sum = 0, r;
+    double num;
+    int x, y;
 
-    cout << "enter the number: ";
-    cin >> n;
+    cout << "enter the number (1.0 - 4.9) ";
+    cin >> num;
 
-    while (n >= 1)
-    {
-        r = (int) n % 10;
-        sum = sum * 10 + r;
-        n = n / 10;
+    x = (int)(num);
+    y = (int)(num * 10) % 10;
+
+    if (x == 1) {
+        cout << "one" ;
     }
-    n = sum;
-    while (n >= 1)
-    {
-        r = (int) n % 10;
-        
-        {
-        
-            cout << "one ";
-            break;
-        
-            cout << "two ";
-            break;
+    else if (x == 2) {
+        cout << "two" ;
+    }
+    else if (x == 3) {
+        cout << "three" ;
+    }
+    else if (x == 4) {
+        cout << "four" ;
+    }
+    cout << " " << "point" <<" ";
+
+    if (y == 1) {
+        cout << "one" << endl;
+    }
+    else if (y == 2) {
+        cout << "two" << endl;
+    }
+    else if (y == 3) {
+        cout << "three" << endl;
+    }
+    else if (y == 4) {
+        cout << "four" << endl;
+    }
+    else if (y == 5) {
+        cout << "five" << endl;
+    }
+    else if (y == 6) {
+        cout << "six" << endl;
+    }
+    else if (y == 7) {
+        cout << "seven" << endl;
+    }
+    else if (y == 8) {
+        cout << "eight" << endl;
+    }
+    else if (y == 9) {
+        cout << "nine" << endl;
+    }
+    else {
+        cout << "zero" << endl;
+    }
        
-            cout << "three ";
-            break;
-        
-            cout << "four ";
-            break;
-        
-            cout << "five ";
-            break;
-       
-            cout << "six ";
-            break;
-        
-            cout << "seven ";
-            break;
-        
-            cout << "eight ";
-            break;
-        
-            cout << "nine ";
-            break;
-        
-            cout << "zero ";
-            break;
-        
-        }
-        n = n / 10;
-    }
-
-
-
-    if (n >= 1.0 && n <= 4.9) {
-        cout << "number is : " << n << endl;
-    }
-    {
-        string convertToWords(double n);
-    }
-    {string out; 
-     n = convertToWords((n % 100), "");
-     cout << convertToWords(n);
-    }
+    return 0;
+    
 }
 
